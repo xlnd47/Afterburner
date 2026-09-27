@@ -8,6 +8,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-experimental-yellow)
 
+![Afterburner's Home screen: full-screen game artwork with a Favorites shelf](docs/screenshots/home.jpg)
+
 > **Unofficial project.** Afterburner is an independent, community-built client. It is **not affiliated with, endorsed by, or supported by Boosteroid**. It talks to Boosteroid's service using the same APIs the official apps use. Use it with your own paid account, for personal and educational purposes.
 
 ---
@@ -22,6 +24,14 @@ Boosteroid ships official apps for many platforms but not for Apple TV. Afterbur
 - **Sign in with your phone.** The login screen shows a QR code. Scan it, type your email and password on your phone, and the TV signs in. No more typing with the Siri Remote.
 - **Redesigned Settings.** Uniform full-width rows in the style of tvOS Settings, an account card with sign-out confirmation, and a "current setup" summary. Help & Support now lives in Settings instead of taking up a tab.
 - **Faster artwork.** Images are cached in memory, so art doesn't flash back in on every focus change.
+
+## Screenshots
+
+| Library | Details |
+|---|---|
+| ![Library grid with search and sorting](docs/screenshots/library.jpg) | ![Full-screen game details with Play and Favorites](docs/screenshots/details.jpg) |
+| **Settings** | **Sign in** |
+| ![Settings with account card, current setup and uniform rows](docs/screenshots/settings.jpg) | ![Sign-in screen with a QR code for phone sign-in](docs/screenshots/login.jpg) |
 
 ## Features
 
