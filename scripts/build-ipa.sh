@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Builds a .ipa of BoosteroidATV.
+# Builds a .ipa of Afterburner.
 #
 #   ./scripts/build-ipa.sh              # unsigned  — for Sideloadly & friends
 #   ./scripts/build-ipa.sh --signed     # signed    — needs a DEVELOPMENT_TEAM
@@ -23,9 +23,9 @@
 
 set -euo pipefail
 
-PROJECT="BoosteroidATV.xcodeproj"
-SCHEME="BoosteroidATV"
-APP_NAME="BoosteroidATV"
+PROJECT="Afterburner.xcodeproj"
+SCHEME="Afterburner"
+APP_NAME="Afterburner"
 BUILD_DIR="build"
 ARCHIVE="$BUILD_DIR/$APP_NAME.xcarchive"
 

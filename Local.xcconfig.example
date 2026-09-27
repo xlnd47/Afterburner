@@ -2,7 +2,7 @@
 // DEVELOPMENT_TEAM (it used to, before this went open source — a personal
 // Apple Developer Team ID has no business being in a public repo). The
 // simplest fix, and what most people should do: open the project in Xcode,
-// select the BoosteroidATV target → Signing & Capabilities, and pick your own
+// select the Afterburner target → Signing & Capabilities, and pick your own
 // team there (Automatic signing). Xcode writes that choice to your local
 // project state, not to project.pbxproj, so it never gets committed.
 //

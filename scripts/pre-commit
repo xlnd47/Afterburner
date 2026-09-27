@@ -37,7 +37,7 @@ if $blocked; then
     git diff --cached --name-only -- '*.pbxproj' | sed 's/^/  /' >&2
     echo >&2
     echo "Drop them before committing:" >&2
-    echo "  git checkout -- BoosteroidATV.xcodeproj/project.pbxproj" >&2
+    echo "  git checkout -- Afterburner.xcodeproj/project.pbxproj" >&2
     echo >&2
     echo "That only reverts the project file — Xcode keeps your team and any" >&2
     echo "bundle id override in its own local state, so signing still works." >&2
