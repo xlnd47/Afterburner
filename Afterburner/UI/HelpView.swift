@@ -95,7 +95,7 @@ struct HelpView: View {
                 ]
             case .requirements:
                 return [
-                    "• An Apple TV running tvOS 17 or later.",
+                    "• An Apple TV running tvOS 18 or later.",
                     "• An active, paid Boosteroid subscription.",
                     "• A strong 5 GHz Wi-Fi or wired connection, especially for 1080p60 and above.",
                     "Video is H.264 only. Boosteroid delivers H.265 and AV1 exclusively over its own native transport, which this app does not implement — so that's a service-side limit, not an Apple TV one.",

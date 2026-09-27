@@ -2,7 +2,7 @@
 
 **An unofficial Apple TV client for [Boosteroid](https://cloud.boosteroid.com) cloud gaming.** Play your Boosteroid library on the big screen with a real game controller, streamed over WebRTC, in a native tvOS app built for the couch.
 
-![Platform](https://img.shields.io/badge/platform-tvOS%2017%2B-black)
+![Platform](https://img.shields.io/badge/platform-tvOS%2018%2B-black)
 ![Language](https://img.shields.io/badge/Swift-5.9%2F6-orange)
 ![Transport](https://img.shields.io/badge/streaming-WebRTC%20(H.264)-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -36,21 +36,29 @@ Boosteroid ships official apps for many platforms but not for Apple TV. Afterbur
 
 ## Requirements
 
-- An Apple TV running **tvOS 17 or newer**
+- An Apple TV running **tvOS 18 or newer**
 - An active, paid **Boosteroid** account with a password (see [Signing in](#signing-in))
+- A Mac with Xcode, to install it (see [Installing](#installing))
 - A game controller (optional, but the Siri Remote alone isn't much fun)
 
 ## Installing
 
-Grab the `.ipa` from the [latest release](../../releases/latest) and install it with a sideloading tool such as [Sideloadly](https://sideloadly.io), signing in with your own Apple ID.
+There are two ways to get Afterburner onto your Apple TV. Both need a Mac.
 
-A few things worth knowing before you start:
+### Option 1: Build it with Xcode (free, recommended)
 
-- The `.ipa` is unsigned on purpose. The sideloading tool signs it with your Apple ID as it installs.
-- On an Apple TV without a USB port, sideloading works from **macOS only**. On the Apple TV, open **Settings → Remotes and Devices → Remote App and Devices** and leave that screen open so your Mac can find it.
-- With a free Apple ID the app stops working after 7 days and has to be reinstalled. A paid Apple Developer Program membership extends that to a year.
+This works with a free Apple ID and needs nothing but Xcode. Follow the steps in [Building](#building) below: open the project, pick your team, press ⌘R. Xcode installs the app on your Apple TV directly.
 
-Prefer to build it yourself? See [Building](#building).
+With a free Apple ID the app stops working after 7 days. Run it from Xcode again (⌘R) to renew it; your settings and sign-in are kept. A paid Apple Developer Program membership extends that to a year.
+
+### Option 2: Install the .ipa
+
+Grab the `.ipa` from the [latest release](../../releases/latest). It's unsigned on purpose, so it has to be signed with your own Apple ID as it's installed:
+
+- **Sideloadly** can do this, but installing on an **Apple TV requires its paid Patreon tier**. The free version fails with an "Invalid file" (Guru Meditation) error at 0%. That's a Sideloadly limitation, not a problem with the `.ipa`.
+- With a **paid Apple Developer account**, you can instead sign the `.ipa` yourself and install it from Xcode (**Window → Devices and Simulators** → your Apple TV → **+** under Installed Apps).
+
+For Apple TVs without a USB port, pairing happens over the network: on the Apple TV, open **Settings → Remotes and Devices → Remote App and Devices** and leave that screen open so your Mac can find it.
 
 ## Building
 
